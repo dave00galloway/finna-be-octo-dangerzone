@@ -1,0 +1,11 @@
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config credential.helper store
+dave@UbuntuVmWare:~/git/bash-tutorial$ git push https://github.com/dave00galloway/finna-be-octo-dangerzone.git
+Username for 'https://github.com': dave00galloway
+Password for 'https://dave00galloway@github.com': 
+Everything up-to-date
+dave@UbuntuVmWare:~/git/bash-tutorial$ git push
+Everything up-to-date
+dave@UbuntuVmWare:~/git/bash-tutorial$ touch credSstoredOk
+dave@UbuntuVmWare:~/git/bash-tutorial$ gedit credSstoredOk 
+dave@UbuntuVmWare:~/git/bash-tutorial$ 
+
