@@ -1,0 +1,14 @@
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --global alias.log-pretty 'git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+dave@UbuntuVmWare:~/git/bash-tutorial$ git log-pretty 
+Expansion of alias 'log-pretty' failed; 'git' is not a git command
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --global alias.log-pretty '!git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+dave@UbuntuVmWare:~/git/bash-tutorial$ git log-pretty 
+* fd38586        (HEAD, origin/master, master) might have setup ssh but who know
+*   ec8b822      Merge branch 'develop'
+|\  
+| * 478bbf6      (develop) adding testfile from https://www.digitalocean.com/com
+|/  
+* 8c98138        http://stackoverflow.com/questions/4298960/git-add-a-git-commit
+* b82a5ea         more noob errors
+* e04c713         install git and get some stuff wrong
+
