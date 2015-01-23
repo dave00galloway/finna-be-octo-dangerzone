@@ -1,0 +1,72 @@
+dave@UbuntuVmWare:~/git/bash-tutorial$ git commit -m " install git and get some stuff wrong" -a
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'dave@UbuntuVmWare.(none)')
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the colour configured: [default]
+    --get-colorbool <slot>
+                          find the colour setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --list
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --global user.name ="dave00galloway"
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --global user.email ="david+a+galloway@yahoo.co.uk"
+dave@UbuntuVmWare:~/git/bash-tutorial$ git commit -m " install git and get some stuff wrong" -a
+On branch master
+
+Initial commit
+
+Untracked files:
+	InstallGitAndMakeSomeErrors.txt
+
+nothing added to commit but untracked files present
+dave@UbuntuVmWare:~/git/bash-tutorial$ git add .
+dave@UbuntuVmWare:~/git/bash-tutorial$ git commit -m " install git and get some stuff wrong" -a
+[master (root-commit) e04c713]  install git and get some stuff wrong
+ 1 file changed, 335 insertions(+)
+ create mode 100644 InstallGitAndMakeSomeErrors.txt
+dave@UbuntuVmWare:~/git/bash-tutorial$
