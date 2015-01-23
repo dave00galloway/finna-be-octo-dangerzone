@@ -1,0 +1,265 @@
+dave@UbuntuVmWare:~/git/bash-tutorial$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behaviour now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': dave00galloway
+Password for 'https://dave00galloway@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 764 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+To https://github.com/dave00galloway/finna-be-octo-dangerzone.git
+   b82a5ea..ec8b822  master -> master
+dave@UbuntuVmWare:~/git/bash-tutorial$ git config --global push.default matchingdave@UbuntuVmWare:~/git/bash-tutorial$ git -h
+Unknown option: -h
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+dave@UbuntuVmWare:~/git/bash-tutorial$ git --info-path
+/usr/share/info
+dave@UbuntuVmWare:~/git/bash-tutorial$ git-log
+git-log: command not found
+dave@UbuntuVmWare:~/git/bash-tutorial$ git log
+commit ec8b8229aabad466c137dcc874b68817973f959e
+Merge: 8c98138 478bbf6
+Author: =dave00galloway <=david+a+galloway@yahoo.co.uk>
+Date:   Fri Jan 23 22:12:42 2015 +0000
+
+    Merge branch 'develop'
+    
+    this is a test merge
+
+commit 478bbf64ca83ae0b66aa5ff305eee7317b5f0117
+Author: =dave00galloway <=david+a+galloway@yahoo.co.uk>
+Date:   Fri Jan 23 22:07:52 2015 +0000
+
+    adding testfile from https://www.digitalocean.com/community/tutorials/how-to
+
+commit 8c98138cf571064a4396174f30847ee57c8ca206
+Author: =dave00galloway <=david+a+galloway@yahoo.co.uk>
+Date:   Fri Jan 23 22:03:55 2015 +0000
+
+    http://stackoverflow.com/questions/4298960/git-add-a-git-commit-in-one-comma
+
+commit b82a5ea8cef04f9a1f359f74b737c4d87e07a988
+Author: =dave00galloway <=david+a+galloway@yahoo.co.uk>
+Date:   Fri Jan 23 21:53:53 2015 +0000
+
+     more noob errors
+
+commit e04c71343deafb309cfea15da1155df308f8cc0f
+Author: =dave00galloway <=david+a+galloway@yahoo.co.uk>
+Date:   Fri Jan 23 21:51:22 2015 +0000
+
+     install git and get some stuff wrong
+dave@UbuntuVmWare:~/git/bash-tutorial$ 
+dave@UbuntuVmWare:~/git/bash-tutorial$ cd ~
+dave@UbuntuVmWare:~$ cd /.ssh
+bash: cd: /.ssh: No such file or directory
+dave@UbuntuVmWare:~$ ssh-keygen -t rsa =C "david_a_galloway@yahoo.co.uk"
+Too many arguments.
+usage: ssh-keygen [options]
+Options:
+  -A          Generate non-existent host keys for all key types.
+  -a number   Number of KDF rounds for new key format or moduli primality tests.
+  -B          Show bubblebabble digest of key file.
+  -b bits     Number of bits in the key to create.
+  -C comment  Provide new comment.
+  -c          Change comment in private and public key files.
+  -D pkcs11   Download public key from pkcs11 token.
+  -e          Export OpenSSH to foreign format key file.
+  -F hostname Find hostname in known hosts file.
+  -f filename Filename of the key file.
+  -G file     Generate candidates for DH-GEX moduli.
+  -g          Use generic DNS resource record format.
+  -H          Hash names in known_hosts file.
+  -h          Generate host certificate instead of a user certificate.
+  -I key_id   Key identifier to include in certificate.
+  -i          Import foreign format to OpenSSH key file.
+  -J number   Screen this number of moduli lines.
+  -j number   Start screening moduli at specified line.
+  -K checkpt  Write checkpoints to this file.
+  -k          Generate a KRL file.
+  -L          Print the contents of a certificate.
+  -l          Show fingerprint of key file.
+  -M memory   Amount of memory (MB) to use for generating DH-GEX moduli.
+  -m key_fmt  Conversion format for -e/-i (PEM|PKCS8|RFC4716).
+  -N phrase   Provide new passphrase.
+  -n name,... User/host principal names to include in certificate
+  -O option   Specify a certificate option.
+  -o          Enforce new private key format.
+  -P phrase   Provide old passphrase.
+  -p          Change passphrase of private key file.
+  -Q          Test whether key(s) are revoked in KRL.
+  -q          Quiet.
+  -R hostname Remove host from known_hosts file.
+  -r hostname Print DNS resource record.
+  -S start    Start point (hex) for generating DH-GEX moduli.
+  -s ca_key   Certify keys with CA key.
+  -T file     Screen candidates for DH-GEX moduli.
+  -t type     Specify type of key to create.
+  -u          Update KRL rather than creating a new one.
+  -V from:to  Specify certificate validity interval.
+  -v          Verbose.
+  -W gen      Generator to use for generating DH-GEX moduli.
+  -y          Read private key file and print public key.
+  -Z cipher   Specify a cipher for new private key format.
+  -z serial   Specify a serial number.
+dave@UbuntuVmWare:~$ ssh-keygen -t rsa -C "david_a_galloway@yahoo.co.uk"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/dave/.ssh/id_rsa):     
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/dave/.ssh/id_rsa.
+Your public key has been saved in /home/dave/.ssh/id_rsa.pub.
+The key fingerprint is:
+10:8c:33:60:a6:c6:11:40:94:b5:72:c1:66:68:7b:26 david_a_galloway@yahoo.co.uk
+The key's randomart image is:
++--[ RSA 2048]----+
+|==X+ o.          |
+|.B.+* ..         |
+|o++o o.          |
+|.Eoo   .         |
+|  +     S        |
+|                 |
+|                 |
+|                 |
+|                 |
++-----------------+
+dave@UbuntuVmWare:~$ ls
+Desktop           fstab         Public              Videos
+DiskManagement    git           ServicesAndThings   VmWareToolsCopyPaste
+Documents         LookupHwinfo  ServicesAndThings~
+Downloads         Music         Templates
+examples.desktop  Pictures      Untitled Document~
+dave@UbuntuVmWare:~$ ls -a
+.              DiskManagement    .ICEauthority  ServicesAndThings
+..             .dmrc             .lesshst       ServicesAndThings~
+.bash_history  Documents         .local         .ssh
+.bash_logout   Downloads         LookupHwinfo   Templates
+.bashrc        examples.desktop  .mozilla       Untitled Document~
+.cache         fstab             Music          Videos
+.compiz        .gconf            Pictures       VmWareToolsCopyPaste
+.config        git               .profile       .Xauthority
+.dbus          .gitconfig        Public         .xsession-errors
+Desktop        .hardinfo         .rpmdb         .xsession-errors.old
+dave@UbuntuVmWare:~$ cd /.ssh
+bash: cd: /.ssh: No such file or directory
+dave@UbuntuVmWare:~$ cd .ssh
+dave@UbuntuVmWare:~/.ssh$ ls
+id_rsa  id_rsa.pub  known_hosts
+dave@UbuntuVmWare:~/.ssh$ cd~
+No command 'cd~' found, did you mean:
+ Command 'cdo' from package 'cdo' (universe)
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cde' from package 'cde' (universe)
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cd5' from package 'cd5' (universe)
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cdi' from package 'cdo' (universe)
+cd~: command not found
+dave@UbuntuVmWare:~/.ssh$ cd ~
+dave@UbuntuVmWare:~$ mkdir key_backup
+dave@UbuntuVmWare:~$ ls
+Desktop           fstab         Pictures            Untitled Document~
+DiskManagement    git           Public              Videos
+Documents         key_backup    ServicesAndThings   VmWareToolsCopyPaste
+Downloads         LookupHwinfo  ServicesAndThings~
+examples.desktop  Music         Templates
+dave@UbuntuVmWare:~$ ls =a
+ls: cannot access =a: No such file or directory
+dave@UbuntuVmWare:~$ ls -a
+.               .dmrc             .lesshst            .ssh
+..              Documents         .local              Templates
+.bash_history   Downloads         LookupHwinfo        Untitled Document~
+.bash_logout    examples.desktop  .mozilla            Videos
+.bashrc         fstab             Music               VmWareToolsCopyPaste
+.cache          .gconf            Pictures            .Xauthority
+.compiz         git               .profile            .xsession-errors
+.config         .gitconfig        Public              .xsession-errors.old
+.dbus           .hardinfo         .rpmdb
+Desktop         .ICEauthority     ServicesAndThings
+DiskManagement  key_backup        ServicesAndThings~
+dave@UbuntuVmWare:~$ cd .ssh
+dave@UbuntuVmWare:~/.ssh$ cp id_rsa* ../key_backup/
+dave@UbuntuVmWare:~/.ssh$ gedit id_rsa.pub
+dave@UbuntuVmWare:~/.ssh$ sudo apt-get git-gui git-doc
+[sudo] password for dave: 
+E: Invalid operation git-gui
+dave@UbuntuVmWare:~/.ssh$ sudo apt-get install git-gui git-doc
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  gitk
+Suggested packages:
+  git-arch git-cvs git-svn git-email gitweb
+The following NEW packages will be installed
+  git-doc git-gui gitk
+0 to upgrade, 3 to newly install, 0 to remove and 278 not to upgrade.
+Need to get 1,144 kB of archives.
+After this operation, 13.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/main git-doc all 1:1.9.1-1ubuntu0.1 [826 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/universe git-gui all 1:1.9.1-1ubuntu0.1 [197 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/main gitk all 1:1.9.1-1ubuntu0.1 [121 kB]
+Fetched 1,144 kB in 1s (860 kB/s)
+Selecting previously unselected package git-doc.
+(Reading database ... 179668 files and directories currently installed.)
+Preparing to unpack .../git-doc_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking git-doc (1:1.9.1-1ubuntu0.1) ...
+Selecting previously unselected package git-gui.
+Preparing to unpack .../git-gui_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking git-gui (1:1.9.1-1ubuntu0.1) ...
+Selecting previously unselected package gitk.
+Preparing to unpack .../gitk_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking gitk (1:1.9.1-1ubuntu0.1) ...
+Processing triggers for doc-base (0.10.5) ...
+Processing 13 added doc-base files...
+Processing triggers for man-db (2.6.7.1-1) ...
+Setting up git-doc (1:1.9.1-1ubuntu0.1) ...
+Setting up git-gui (1:1.9.1-1ubuntu0.1) ...
+Setting up gitk (1:1.9.1-1ubuntu0.1) ...
+dave@UbuntuVmWare:~/.ssh$ sudo apt-get install git-core
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed
+  git-core
+0 to upgrade, 1 to newly install, 0 to remove and 278 not to upgrade.
+Need to get 1,458 B of archives.
+After this operation, 21.5 kB of additional disk space will be used.
+Get:1 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/main git-core all 1:1.9.1-1ubuntu0.1 [1,458 B]
+Fetched 1,458 B in 0s (17.1 kB/s)
+Selecting previously unselected package git-core.
+(Reading database ... 180264 files and directories currently installed.)
+Preparing to unpack .../git-core_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking git-core (1:1.9.1-1ubuntu0.1) ...
+Setting up git-core (1:1.9.1-1ubuntu0.1) ...
+dave@UbuntuVmWare:~/.ssh$ cd ~
+dave@UbuntuVmWare:~$ cd git/
+dave@UbuntuVmWare:~/git$ ls
+bash-tutorial  NodeJS-tutorial
+dave@UbuntuVmWare:~/git$ cd bash-tutorial/
