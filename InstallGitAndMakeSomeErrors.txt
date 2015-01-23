@@ -1,0 +1,335 @@
+dave@UbuntuVmWare:~$ sudo -i
+[sudo] password for dave: 
+root@UbuntuVmWare:~# sudo apt-update
+sudo: apt-update: command not found
+root@UbuntuVmWare:~# apt-get update
+Ign http://extras.ubuntu.com trusty InRelease
+Ign http://gb.archive.ubuntu.com trusty InRelease                          
+Ign http://gb.archive.ubuntu.com trusty-updates InRelease                  
+Hit http://extras.ubuntu.com trusty Release.gpg                             
+Hit http://extras.ubuntu.com trusty Release                                 
+Ign http://gb.archive.ubuntu.com trusty-backports InRelease                 
+Hit http://gb.archive.ubuntu.com trusty Release.gpg                         
+Ign http://security.ubuntu.com trusty-security InRelease                    
+Get:1 http://gb.archive.ubuntu.com trusty-updates Release.gpg [933 B]       
+Hit http://gb.archive.ubuntu.com trusty-backports Release.gpg               
+Hit http://gb.archive.ubuntu.com trusty Release 
+Get:2 http://gb.archive.ubuntu.com trusty-updates Release [62.0 kB]
+Get:3 http://security.ubuntu.com trusty-security Release.gpg [933 B]      
+Hit http://gb.archive.ubuntu.com trusty-backports Release   
+Get:4 http://security.ubuntu.com trusty-security Release [62.0 kB]
+Hit http://extras.ubuntu.com trusty/main Sources                               
+Hit http://extras.ubuntu.com trusty/main i386 Packages                         
+Hit http://gb.archive.ubuntu.com trusty/main Sources                           
+Hit http://gb.archive.ubuntu.com trusty/restricted Sources
+Ign http://extras.ubuntu.com trusty/main Translation-en_GB               
+Hit http://gb.archive.ubuntu.com trusty/universe Sources                 
+Ign http://extras.ubuntu.com trusty/main Translation-en
+Hit http://gb.archive.ubuntu.com trusty/multiverse Sources
+Hit http://gb.archive.ubuntu.com trusty/main i386 Packages
+Hit http://gb.archive.ubuntu.com trusty/restricted i386 Packages
+Hit http://gb.archive.ubuntu.com trusty/universe i386 Packages
+Hit http://gb.archive.ubuntu.com trusty/multiverse i386 Packages
+Hit http://gb.archive.ubuntu.com trusty/main Translation-en_GB
+Hit http://gb.archive.ubuntu.com trusty/main Translation-en
+Hit http://gb.archive.ubuntu.com trusty/multiverse Translation-en_GB
+Hit http://gb.archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://gb.archive.ubuntu.com trusty/restricted Translation-en_GB
+Hit http://gb.archive.ubuntu.com trusty/restricted Translation-en
+Hit http://gb.archive.ubuntu.com trusty/universe Translation-en_GB
+Hit http://gb.archive.ubuntu.com trusty/universe Translation-en
+Get:5 http://security.ubuntu.com trusty-security/main Sources [64.4 kB]
+Get:6 http://gb.archive.ubuntu.com trusty-updates/main Sources [157 kB]
+Get:7 http://gb.archive.ubuntu.com trusty-updates/restricted Sources [2,061 B]
+Get:8 http://gb.archive.ubuntu.com trusty-updates/universe Sources [97.6 kB]
+Get:9 http://gb.archive.ubuntu.com trusty-updates/multiverse Sources [3,558 B]
+Get:10 http://gb.archive.ubuntu.com trusty-updates/main i386 Packages [397 kB]
+Get:11 http://security.ubuntu.com trusty-security/restricted Sources [2,061 B] 
+Get:12 http://security.ubuntu.com trusty-security/universe Sources [17.4 kB]   
+Get:13 http://gb.archive.ubuntu.com trusty-updates/restricted i386 Packages [8,846 B]
+Get:14 http://gb.archive.ubuntu.com trusty-updates/universe i386 Packages [241 kB]
+Get:15 http://gb.archive.ubuntu.com trusty-updates/multiverse i386 Packages [9,570 B]
+Get:16 http://security.ubuntu.com trusty-security/multiverse Sources [714 B]
+Hit http://gb.archive.ubuntu.com trusty-updates/main Translation-en       
+Hit http://gb.archive.ubuntu.com trusty-updates/multiverse Translation-en
+Hit http://gb.archive.ubuntu.com trusty-updates/restricted Translation-en
+Hit http://gb.archive.ubuntu.com trusty-updates/universe Translation-en
+Hit http://gb.archive.ubuntu.com trusty-backports/main Sources        
+Get:17 http://security.ubuntu.com trusty-security/main i386 Packages [190 kB]
+Hit http://gb.archive.ubuntu.com trusty-backports/restricted Sources           
+Hit http://gb.archive.ubuntu.com trusty-backports/universe Sources             
+Hit http://gb.archive.ubuntu.com trusty-backports/multiverse Sources           
+Hit http://gb.archive.ubuntu.com trusty-backports/main i386 Packages           
+Hit http://gb.archive.ubuntu.com trusty-backports/restricted i386 Packages     
+Hit http://gb.archive.ubuntu.com trusty-backports/universe i386 Packages       
+Hit http://gb.archive.ubuntu.com trusty-backports/multiverse i386 Packages     
+Hit http://gb.archive.ubuntu.com trusty-backports/main Translation-en          
+Hit http://gb.archive.ubuntu.com trusty-backports/multiverse Translation-en    
+Hit http://gb.archive.ubuntu.com trusty-backports/restricted Translation-en    
+Hit http://gb.archive.ubuntu.com trusty-backports/universe Translation-en      
+Get:18 http://security.ubuntu.com trusty-security/restricted i386 Packages [8,846 B]
+Get:19 http://security.ubuntu.com trusty-security/universe i386 Packages [84.9 kB]
+Get:20 http://security.ubuntu.com trusty-security/multiverse i386 Packages [1,397 B]
+Hit http://security.ubuntu.com trusty-security/main Translation-en
+Hit http://security.ubuntu.com trusty-security/multiverse Translation-en
+Hit http://security.ubuntu.com trusty-security/restricted Translation-en
+Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Fetched 1,413 kB in 5s (250 kB/s)                 
+Reading package lists... Done
+root@UbuntuVmWare:~# apt-get install git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following NEW packages will be installed
+  git git-man liberror-perl
+0 to upgrade, 3 to newly install, 0 to remove and 278 not to upgrade.
+Need to get 3,230 kB of archives.
+After this operation, 21.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.1 [698 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu/ trusty-updates/main git i386 1:1.9.1-1ubuntu0.1 [2,511 kB]
+Fetched 3,230 kB in 3s (937 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 178920 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking git-man (1:1.9.1-1ubuntu0.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.1_i386.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:1.9.1-1ubuntu0.1) ...
+Setting up git (1:1.9.1-1ubuntu0.1) ...
+root@UbuntuVmWare:~# git config --global user.name "Your Name"
+root@UbuntuVmWare:~# !git
+-bash: !git: event not found
+root@UbuntuVmWare:~# git config --global user.name "dave00galloway"
+root@UbuntuVmWare:~# git config --global user.email "david_a_galloway@yahoo.co.uk"
+root@UbuntuVmWare:~# git config --list
+user.name=dave00galloway
+user.email=david_a_galloway@yahoo.co.uk
+root@UbuntuVmWare:~# quit
+No command 'quit' found, did you mean:
+ Command 'qgit' from package 'qgit' (universe)
+ Command 'quot' from package 'quota' (main)
+ Command 'quiz' from package 'bsdgames' (universe)
+ Command 'quilt' from package 'quilt' (main)
+ Command 'luit' from package 'x11-utils' (main)
+quit: command not found
+root@UbuntuVmWare:~# exit
+logout
+dave@UbuntuVmWare:~$ pwd
+/home/dave
+dave@UbuntuVmWare:~$ mkdir /git
+mkdir: cannot create directory ‘/git’: Permission denied
+dave@UbuntuVmWare:~$ mkdir ./git
+dave@UbuntuVmWare:~$ ls
+Desktop           fstab         Public              Videos
+DiskManagement    git           ServicesAndThings   VmWareToolsCopyPaste
+Documents         LookupHwinfo  ServicesAndThings~
+Downloads         Music         Templates
+examples.desktop  Pictures      Untitled Document~
+dave@UbuntuVmWare:~$ cd git
+dave@UbuntuVmWare:~/git$ git clone https://github.com/dave00galloway/NodeJS-tutorial.git
+Cloning into 'NodeJS-tutorial'...
+remote: Counting objects: 120, done.
+remote: Compressing objects: 100% (92/92), done.
+remote: Total 120 (delta 11), reused 120 (delta 11)
+Receiving objects: 100% (120/120), 81.43 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (11/11), done.
+Checking connectivity... done.
+dave@UbuntuVmWare:~/git$ ls
+NodeJS-tutorial
+dave@UbuntuVmWare:~/git$ cd NodeJS-tutorial/
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ ls
+LearnYouNode  NodeJS
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ cd ../../
+dave@UbuntuVmWare:~$ ls
+Desktop           fstab         Public              Videos
+DiskManagement    git           ServicesAndThings   VmWareToolsCopyPaste
+Documents         LookupHwinfo  ServicesAndThings~
+Downloads         Music         Templates
+examples.desktop  Pictures      Untitled Document~
+dave@UbuntuVmWare:~$ cd git
+dave@UbuntuVmWare:~/git$ ls
+NodeJS-tutorial
+dave@UbuntuVmWare:~/git$ ls -a
+.  ..  NodeJS-tutorial
+dave@UbuntuVmWare:~/git$ cd NodeJS-tutorial/
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ ls -a
+.  ..  .git  LearnYouNode  NodeJS
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ ls -al
+total 20
+drwxrwxr-x 5 dave dave 4096 Jan 23 15:59 .
+drwxrwxr-x 3 dave dave 4096 Jan 23 15:59 ..
+drwxrwxr-x 8 dave dave 4096 Jan 23 15:59 .git
+drwxrwxr-x 6 dave dave 4096 Jan 23 15:59 LearnYouNode
+drwxrwxr-x 4 dave dave 4096 Jan 23 15:59 NodeJS
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ ls -alt
+total 20
+drwxrwxr-x 8 dave dave 4096 Jan 23 15:59 .git
+drwxrwxr-x 5 dave dave 4096 Jan 23 15:59 .
+drwxrwxr-x 6 dave dave 4096 Jan 23 15:59 LearnYouNode
+drwxrwxr-x 4 dave dave 4096 Jan 23 15:59 NodeJS
+drwxrwxr-x 3 dave dave 4096 Jan 23 15:59 ..
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ ls -alrt
+total 20
+drwxrwxr-x 3 dave dave 4096 Jan 23 15:59 ..
+drwxrwxr-x 4 dave dave 4096 Jan 23 15:59 NodeJS
+drwxrwxr-x 6 dave dave 4096 Jan 23 15:59 LearnYouNode
+drwxrwxr-x 5 dave dave 4096 Jan 23 15:59 .
+drwxrwxr-x 8 dave dave 4096 Jan 23 15:59 .git
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ git-gui
+git-gui: command not found
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ git --html-path
+/usr/share/doc/git/html
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ which firefox
+/usr/bin/firefox
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ cd | git --html-path
+/usr/share/doc/git/html
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ cd /usr/share/doc/git/html
+bash: cd: /usr/share/doc/git/html: No such file or directory
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ cd /share
+bash: cd: /share: No such file or directory
+dave@UbuntuVmWare:~/git/NodeJS-tutorial$ cd /
+dave@UbuntuVmWare:/$ ls
+bin    data  home        lost+found  opt   run   sys       usr
+boot   dev   initrd.img  media       proc  sbin  testlibs  var
+cdrom  etc   lib         mnt         root  srv   tmp       vmlinuz
+dave@UbuntuVmWare:/$ cd usr
+dave@UbuntuVmWare:/usr$ cd share/
+dave@UbuntuVmWare:/usr/share$ cd doc
+dave@UbuntuVmWare:/usr/share/doc$ cd git
+dave@UbuntuVmWare:/usr/share/doc/git$ cd html
+bash: cd: html: No such file or directory
+dave@UbuntuVmWare:/usr/share/doc/git$ ls
+changelog.Debian.gz  copyright       README         README.emacs   RelNotes
+contrib              NEWS.Debian.gz  README.Debian  README.source
+dave@UbuntuVmWare:/usr/share/doc/git$ cd -
+/usr/share/doc
+dave@UbuntuVmWare:/usr/share/doc$ cd ~/git
+dave@UbuntuVmWare:~/git$ ls
+NodeJS-tutorial
+dave@UbuntuVmWare:~/git$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+dave@UbuntuVmWare:~/git$ mkdir bash-tutorial
+dave@UbuntuVmWare:~/git$ cd bash-tutorial/
+dave@UbuntuVmWare:~/git/bash-tutorial$ git-init
+No command 'git-init' found, did you mean:
+ Command 'get-init' from package 'init-select' (universe)
+git-init: command not found
+dave@UbuntuVmWare:~/git/bash-tutorial$ sudo -i
+[sudo] password for dave: 
+root@UbuntuVmWare:~# git init
+Initialised empty Git repository in /root/.git/
+root@UbuntuVmWare:~# git html
+git: 'html' is not a git command. See 'git --help'.
+
+Did you mean this?
+	shell
+root@UbuntuVmWare:~# ls
+Desktop  fstab  fstab~  swapfile
+root@UbuntuVmWare:~# ls -a
+.              .bashrc  .dbus    fstab~      .gvfs     swapfile
+..             .cache   Desktop  .git        .local    .viminfo
+.bash_history  .config  fstab    .gitconfig  .profile
+root@UbuntuVmWare:~# ls -lrt
+total 1012
+drwxr-xr-x 2 root root    4096 Jan 23 11:35 Desktop
+-rw-r--r-- 1 root root     887 Jan 23 12:06 fstab~
+-rw-r--r-- 1 root root 1024000 Jan 23 12:11 swapfile
+-rw-r--r-- 1 root root     887 Jan 23 12:16 fstab
+root@UbuntuVmWare:~# ls -lrta
+total 1060
+-rw-r--r--  1 root root     140 Feb 20  2014 .profile
+-rw-r--r--  1 root root    3106 Feb 20  2014 .bashrc
+-rw-------  1 root root     702 Jan 22 21:42 .viminfo
+drwx------  3 root root    4096 Jan 22 23:06 .dbus
+drwx------  3 root root    4096 Jan 22 23:06 .cache
+drwxr-xr-x 24 root root    4096 Jan 23 08:07 ..
+drwxr-xr-x  3 root root    4096 Jan 23 08:10 .local
+dr-x------  2 root root       0 Jan 23 08:10 .gvfs
+drwxr-xr-x  2 root root    4096 Jan 23 11:35 Desktop
+drwxr-xr-x  6 root root    4096 Jan 23 11:35 .config
+-rw-r--r--  1 root root     887 Jan 23 12:06 fstab~
+-rw-r--r--  1 root root 1024000 Jan 23 12:11 swapfile
+-rw-r--r--  1 root root     887 Jan 23 12:16 fstab
+-rw-r--r--  1 root root      68 Jan 23 15:55 .gitconfig
+-rw-------  1 root root    3730 Jan 23 15:57 .bash_history
+drwx------  9 root root    4096 Jan 23 16:24 .
+drwxr-xr-x  7 root root    4096 Jan 23 16:24 .git
+root@UbuntuVmWare:~# git rm
+usage: git rm [options] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+root@UbuntuVmWare:~# git rm -r
+usage: git rm [options] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+root@UbuntuVmWare:~# ls -lrta
+total 1060
+-rw-r--r--  1 root root     140 Feb 20  2014 .profile
+-rw-r--r--  1 root root    3106 Feb 20  2014 .bashrc
+-rw-------  1 root root     702 Jan 22 21:42 .viminfo
+drwx------  3 root root    4096 Jan 22 23:06 .dbus
+drwx------  3 root root    4096 Jan 22 23:06 .cache
+drwxr-xr-x 24 root root    4096 Jan 23 08:07 ..
+drwxr-xr-x  3 root root    4096 Jan 23 08:10 .local
+dr-x------  2 root root       0 Jan 23 08:10 .gvfs
+drwxr-xr-x  2 root root    4096 Jan 23 11:35 Desktop
+drwxr-xr-x  6 root root    4096 Jan 23 11:35 .config
+-rw-r--r--  1 root root     887 Jan 23 12:06 fstab~
+-rw-r--r--  1 root root 1024000 Jan 23 12:11 swapfile
+-rw-r--r--  1 root root     887 Jan 23 12:16 fstab
+-rw-r--r--  1 root root      68 Jan 23 15:55 .gitconfig
+-rw-------  1 root root    3730 Jan 23 15:57 .bash_history
+drwx------  9 root root    4096 Jan 23 16:24 .
+drwxr-xr-x  7 root root    4096 Jan 23 16:24 .git
+root@UbuntuVmWare:~# rm .git
+rm: cannot remove ‘.git’: Is a directory
+root@UbuntuVmWare:~# rm -r .git
+root@UbuntuVmWare:~# ls -lrta
+total 1056
+-rw-r--r--  1 root root     140 Feb 20  2014 .profile
+-rw-r--r--  1 root root    3106 Feb 20  2014 .bashrc
+-rw-------  1 root root     702 Jan 22 21:42 .viminfo
+drwx------  3 root root    4096 Jan 22 23:06 .dbus
+drwx------  3 root root    4096 Jan 22 23:06 .cache
+drwxr-xr-x 24 root root    4096 Jan 23 08:07 ..
+drwxr-xr-x  3 root root    4096 Jan 23 08:10 .local
+dr-x------  2 root root       0 Jan 23 08:10 .gvfs
+drwxr-xr-x  2 root root    4096 Jan 23 11:35 Desktop
+drwxr-xr-x  6 root root    4096 Jan 23 11:35 .config
+-rw-r--r--  1 root root     887 Jan 23 12:06 fstab~
+-rw-r--r--  1 root root 1024000 Jan 23 12:11 swapfile
+-rw-r--r--  1 root root     887 Jan 23 12:16 fstab
+-rw-r--r--  1 root root      68 Jan 23 15:55 .gitconfig
+-rw-------  1 root root    3730 Jan 23 15:57 .bash_history
+drwx------  8 root root    4096 Jan 23 16:26 .
+root@UbuntuVmWare:~# exit
+logout
+dave@UbuntuVmWare:~/git/bash-tutorial$ git init
+Initialised empty Git repository in /home/dave/git/bash-tutorial/.git/
+dave@UbuntuVmWare:~/git/bash-tutorial$
