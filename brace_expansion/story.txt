@@ -1,0 +1,2 @@
+everything I type is stored in story.txt
+hello, world
