@@ -1,0 +1,32 @@
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ paste *grades
+paste: *grades: No such file or directory
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls
+cheatsheet.pdf  demo  nanotest  oscars.new  oscars.tsv  students  vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ cd students/
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ paste *grades
+clark 50	clark 55
+bruce 61	peter 70
+steve 43	tony 99
+jonathan 100	bruce 99
+logan 19	Steve 33
+peter 78	jonathan 100
+tony 92	logan 45
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ sort math_grades > math_sorted
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ sort physics_grades > physics_sorted
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ paste *sorted
+bruce 61	bruce 99
+clark 50	clark 55
+jonathan 100	jonathan 100
+logan 19	logan 45
+peter 78	peter 70
+steve 43	Steve 33
+tony 92	tony 99
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ join *sorted
+bruce 61 99
+clark 50 55
+jonathan 100 100
+logan 19 45
+peter 78 70
+tony 92 99
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ 
+

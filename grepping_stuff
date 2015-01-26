@@ -1,0 +1,78 @@
+dave@UbuntuVmWare:~$ cd git/bash-tutorial/introduction-bash-shell-linux-mac-os//5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files$ ls
+demos  __MACOSX
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files$ cd demos/
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos$ ls
+after  before
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos$ cd before/
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls
+cheatsheet.pdf  demo  nanotest  oscars.tsv  students  vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ cd students/
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ sort math_attendance  | uniq
+
+bruce
+clark
+jonathan
+lecture 1
+lecture 2
+lecture 3
+lecture 4
+lecture 5
+logan
+peter
+steve
+tony
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ grep -v lecture math_attendance  | sort | uniq
+
+bruce
+clark
+jonathan
+logan
+peter
+steve
+tony
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ grep -Ev "^$"|lecture math_attendance  | sort | uniq
+
+[1]+  Stopped                 grep --color=auto -Ev "^$" | lecture math_attendance | sort | uniq
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ grep -Ev "^$|lecture" math_attendance  | sort | uniq
+bruce
+clark
+jonathan
+logan
+peter
+steve
+tony
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ ls -l
+total 16
+-rw-rw-r-- 1 dave dave 217 Jun 23  2013 math_attendance
+-rw-rw-r-- 1 dave dave  66 Jun 23  2013 math_grades
+-rw-rw-r-- 1 dave dave 215 Jun 23  2013 physics_attendance
+-rw-rw-r-- 1 dave dave  66 Jun 23  2013 physics_grades
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before/students$ cd ../
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls
+cheatsheet.pdf  demo  nanotest  oscars.tsv  students  vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls -l
+total 744
+-rw-rw-r-- 1 dave dave 706624 Jun 28  2013 cheatsheet.pdf
+drwxrwxr-x 2 dave dave   4096 Jul  1  2013 demo
+-rw-rw-r-- 1 dave dave     25 Jan 26 14:30 nanotest
+-rw-rw-r-- 1 dave dave  36392 Jun 12  2013 oscars.tsv
+drwxrwxr-x 2 dave dave   4096 Jul  1  2013 students
+-rw-rw-r-- 1 dave dave     20 Jan 26 14:41 vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls -l | grep "^d"
+drwxrwxr-x 2 dave dave   4096 Jul  1  2013 demo
+drwxrwxr-x 2 dave dave   4096 Jul  1  2013 students
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls -l | grep -v "^d"
+total 744
+-rw-rw-r-- 1 dave dave 706624 Jun 28  2013 cheatsheet.pdf
+-rw-rw-r-- 1 dave dave     25 Jan 26 14:30 nanotest
+-rw-rw-r-- 1 dave dave  36392 Jun 12  2013 oscars.tsv
+-rw-rw-r-- 1 dave dave     20 Jan 26 14:41 vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ ls -l | grep -Ev "^d"
+total 744
+-rw-rw-r-- 1 dave dave 706624 Jun 28  2013 cheatsheet.pdf
+-rw-rw-r-- 1 dave dave     25 Jan 26 14:30 nanotest
+-rw-rw-r-- 1 dave dave  36392 Jun 12  2013 oscars.tsv
+-rw-rw-r-- 1 dave dave     20 Jan 26 14:41 vitest
+dave@UbuntuVmWare:~/git/bash-tutorial/introduction-bash-shell-linux-mac-os/5-introduction-bash-shell-linux-mac-os-m5-processing-exercise-files/demos/before$ 
+
