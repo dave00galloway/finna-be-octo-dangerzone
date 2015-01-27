@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#create_script
+#creates a new bash script, sets permissions etc
+#author dg
+
+#Is there an argument?
+if [[ ! $1 ]]; then
+    echo "missing argument"
+    exit 1
+fi
+
+scriptname=$1
+bindir=$HOME"/git/bash-tutorial/bash-shell-scripting/bin"
+filename=$bindir/$scriptname
+
+if [[ -e $filename ]]; then
+    echo "File "$filename" already exists"
+    exit 1
+#
+#else
+#    echo "File "$filename" does not already exist" 
+#
+#   
+fi
+
+if type $scriptname ; then
+    echo "there is already a command called " $scriptname
+    exit 1
+fi
+
+#check bin exists
+if [[ ! -d $bindir ]]; then
+    if mkdir $bindir ; then 
+	echo "created " $bindir
+    else
+	echo "failed to create " $bindir
+	exit 1
+    fi
+fi
+
+echo "end!"
+exit 0
