@@ -9,7 +9,7 @@
 #echo $* >> ~/notes.txt
 
 #get the topic - first argument
-topic=$1
+topic="$1"
 
 #file to write to
 filename=~/${topic}notes.txt
@@ -17,6 +17,12 @@ filename=~/${topic}notes.txt
 #request input
 read -p "what do you want then? " note
 
-#adds date to note
-echo $(date): $note >> "$filename"
-echo Note \'$note\' saved to $filename
+#check input
+if [[ $note ]]; then
+    #adds date to note
+    #double quotes on $filename allows spaces in filename
+    echo $(date): $note >> "$filename"
+    echo Note \'$note\' saved to $filename
+else
+    echo "No Input - no save"
+fi
