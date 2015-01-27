@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#comment
+
+#takes first argument
+#echo $1 >> ~/notes.txt
+
+#takes all argumentsnts
+#echo $* >> ~/notes.txt
+
+#adds date to note
+echo $(date): $* >> ~/notes.txt
+echo Note saved: $*

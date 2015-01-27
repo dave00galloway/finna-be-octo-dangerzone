@@ -1,26 +1,29 @@
+#!/bin/bash
 echo Hello,World
-dave@UbuntuVmWare:$ cd bash-shell-scripting/
-dave@UbuntuVmWare:$ ls
-10-bash-shell-scripting-m10-strings-exercise-files
-10-bash-shell-scripting-m10-strings-slides.pdf
-11-bash-shell-scripting-m11-running-slides.pdf
-1-bash-shell-scripting-m1-intro-slides.pdf
-2-bash-shell-scripting-m2-firstlook-exercise-files
-2-bash-shell-scripting-m2-firstlook-slides.pdf
-3-bash-shell-scripting-m3-variables-exercise-files
-3-bash-shell-scripting-m3-variables-slides.pdf
-4-bash-shell-scripting-m4-if-exercise-files
-4-bash-shell-scripting-m4-if-slides.pdf
-5-bash-shell-scripting-m5-io-exercise-files
-5-bash-shell-scripting-m5-io-slides.pdf
-6-bash-shell-scripting-m6-control-exercise-files
-6-bash-shell-scripting-m6-control-slides.pdf
-7-bash-shell-scripting-m7-var2-exercise-files
-7-bash-shell-scripting-m7-var2-slides.pdf
-8-bash-shell-scripting-m8-options-exercise-files
-8-bash-shell-scripting-m8-options-slides.pdf
-9-bash-shell-scripting-m9-func-exercise-files
-9-bash-shell-scripting-m9-func-slides.pdf
+#dave@UbuntuVmWare:$ cd bash-shell-scripting/
+#dave@UbuntuVmWare:$ ls
+#
+#10-bash-shell-scripting-m10-strings-exercise-files
+#10-bash-shell-scripting-m10-strings-slides.pdf
+#11-bash-shell-scripting-m11-running-slides.pdf
+#1-bash-shell-scripting-m1-intro-slides.pdf
+#2-bash-shell-scripting-m2-firstlook-exercise-files
+#2-bash-shell-scripting-m2-firstlook-slides.pdf
+#3-bash-shell-scripting-m3-variables-exercise-files
+#3-bash-shell-scripting-m3-variables-slides.pdf
+#4-bash-shell-scripting-m4-if-exercise-files
+#4-bash-shell-scripting-m4-if-slides.pdf
+#5-bash-shell-scripting-m5-io-exercise-files
+#5-bash-shell-scripting-m5-io-slides.pdf
+#6-bash-shell-scripting-m6-control-exercise-files
+#6-bash-shell-scripting-m6-control-slides.pdf
+#7-bash-shell-scripting-m7-var2-exercise-files
+#7-bash-shell-scripting-m7-var2-slides.pdf
+#8-bash-shell-scripting-m8-options-exercise-files
+#8-bash-shell-scripting-m8-options-slides.pdf
+#9-bash-shell-scripting-m9-func-exercise-files
+#9-bash-shell-scripting-m9-func-slides.pdf
+#
 #hw
 #dave@UbuntuVmWare:$ hw
 #hw: command not found
