@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#comment
+
+#takes first argument
+#echo $1 >> ~/notes.txt
+
+#takes all argumentsnts
+#echo $* >> ~/notes.txt
+
+#get the topic - first argument
+topic=$1
+
+#file to write to
+filename=${topic}notes.txt
+
+#request input
+read -p "what do you want then? " note
+
+#adds date to note
+echo $(date): $note >> ~/$filename
+echo Note saved: $note
